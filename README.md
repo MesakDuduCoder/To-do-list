@@ -86,7 +86,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://mesakduducoder.github.io/MesakDuduCoder.github.io-JS-To-Do-List/dist/)
+- [Live Demo Link](https://mesakduducoder.github.io/To-do-list/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
