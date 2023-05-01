@@ -1,11 +1,11 @@
-const lists = localStorage.getItem('toDoList');
-const get = JSON.parse(lists);
-let tasks = [];
-if (get) {
-  tasks = get;
-}
-
 export const addTask = (description) => {
+  const lists = localStorage.getItem('toDoList');
+  const get = JSON.parse(lists);
+  let tasks = [];
+  if (get) {
+    tasks = get;
+  }
+
   tasks.push({
     description,
     completed: false,
@@ -15,6 +15,13 @@ export const addTask = (description) => {
 };
 
 export const removeTask = (indexNo) => {
+  const lists = localStorage.getItem('toDoList');
+  const get = JSON.parse(lists);
+  let tasks = [];
+  if (get) {
+    tasks = get;
+  }
+
   tasks.splice(indexNo, 1);
   localStorage.setItem('toDoList', JSON.stringify(tasks));
 };
