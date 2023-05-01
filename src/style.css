@@ -22,13 +22,14 @@ input::placeholder {
   max-width: 1200px;
 }
 
-#to-do-list {
+.list {
   padding-inline-start: 0;
   box-sizing: border-box;
   border-radius: 3px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
   width: 100%;
   min-width: 300px;
+  display: none;
   margin: 0;
 }
 
@@ -51,7 +52,6 @@ input::placeholder {
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   min-width: 300px;
@@ -120,7 +120,30 @@ input::placeholder {
   border: none;
   background-color: transparent;
   opacity: 0.5;
-  margin-inline-start: auto;
+}
+
+.edit-btn {
+  border: none;
+  background-color: transparent;
+  opacity: 0.5;
+  padding: 0;
+}
+
+.edit-btn > svg {
+  margin: 5px;
+}
+
+.edit-btn-save {
+  border: none;
+  background-color: transparent;
+  opacity: 0.5;
+  padding: 0;
+}
+
+.edit-btn-save > p {
+  font-weight: 900;
+  font-size: 1rem;
+  margin: 0;
 }
 
 #remove {
@@ -137,4 +160,18 @@ input::placeholder {
 #remove:focus {
   opacity: 1;
   text-decoration: underline;
+}
+
+#edit {
+  height: 45px;
+  min-width: 250px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  font-size: 1.2rem;
+}
+
+#edit:focus {
+  outline: none;
 }
