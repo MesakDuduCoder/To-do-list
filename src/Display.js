@@ -1,5 +1,6 @@
 import { editItem, saveEdit } from './Edits.js';
-import { addTask, removeTask } from './addAndRemoveTask.js';
+import { addTask, removeTask } from './AddRemoveTask.js';
+import { checkTaskDone } from './CheckAndClear.js';
 
 const toDoList = document.getElementById('to-do-list');
 toDoList.classList.add('list');
@@ -19,6 +20,9 @@ export const display = () => {
 
       const completed = document.createElement('button');
       completed.className = 'todo';
+      completed.addEventListener('click', (e) => {
+        checkTaskDone(e, indexNo);
+      });
 
       const description = document.createElement('span');
       description.className = 'task-item';

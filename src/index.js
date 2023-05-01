@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import './Display.js';
+import { clearTasks } from './CheckAndClear.js';
 
 function component() {
   const demo = document.getElementById('Demo');
@@ -29,6 +30,9 @@ function component() {
   clearCompleted.innerHTML = 'Clear all completed';
   remove.className = 'list-item-2';
   remove.style = 'justify-content: center';
+  clearCompleted.addEventListener('click', (e) => {
+    clearTasks();
+  });
   remove.appendChild(clearCompleted);
 }
 

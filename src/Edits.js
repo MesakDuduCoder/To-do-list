@@ -1,5 +1,3 @@
-import { display } from './Display.js';
-
 export const editItem = (item) => {
   const writeEdit = document.createElement('input');
   writeEdit.id = 'edit';
